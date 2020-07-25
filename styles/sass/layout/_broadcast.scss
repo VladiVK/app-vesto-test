@@ -3,11 +3,10 @@
         background: #cccccc;
     }
 }
+
 .broadcast__content {
     @include flex(column, center, center);
     border: 1px solid coral;
-    
-    // min-height: 770px;
 }
 
 .broadcast__stream {
@@ -16,13 +15,14 @@
     margin-top: 4rem;
 
     @include flex(row, center, center);
-    
+
     .stream-content {
         @include flex(column, center, flex-end);
-        
+
     }
+
     .stream-control {
-        
+
         background: #0071bc;
         color: #ffffff;
 
@@ -31,5 +31,41 @@
         border-radius: 2px;
         @include flex(column, center, center);
 
+    }
+
+
+}
+
+.broadcast__window {
+    flex: 1 1 46rem;
+    width: 100%;
+    @include flex(row, center, center);
+    padding-top: 3rem;
+
+    .window-sidebar {
+        flex: 1 1 32.5rem;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    .window-main {
+        flex: 1 1 auto;
+        border: 1px solid coral;
+        @include flex(column, center, center);
+        
+        width: 100%;
+        height: 100%;
+        .window-main-display {
+            background: #000;
+            flex:  1 1 90%;
+            width: 100%;
+        }
+        .window-main-info {
+            flex:  1 1 10%;
+            background: #3fa9f5;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
