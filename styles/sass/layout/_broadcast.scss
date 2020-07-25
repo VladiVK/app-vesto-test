@@ -1,0 +1,35 @@
+.broadcast {
+    .container {
+        background: #cccccc;
+    }
+}
+.broadcast__content {
+    @include flex(column, center, center);
+    border: 1px solid coral;
+    
+    // min-height: 770px;
+}
+
+.broadcast__stream {
+    border: 1px solid coral;
+    align-self: flex-end;
+    margin-top: 4rem;
+
+    @include flex(row, center, center);
+    
+    .stream-content {
+        @include flex(column, center, flex-end);
+        
+    }
+    .stream-control {
+        
+        background: #0071bc;
+        color: #ffffff;
+
+        margin-left: 14px;
+        padding: 20px 10px 15px 12px;
+        border-radius: 2px;
+        @include flex(column, center, center);
+
+    }
+}
