@@ -1,0 +1,23 @@
+.main-footer {
+    .container {
+        background: #cccccc;
+        padding: 1rem 5.5rem;
+    }
+}
+.footer-wrapper {
+    @include flex(row, center, center);
+
+    .footer__social {
+        flex: 1 1 75%;
+        @include flex(row, flex-start, center);
+
+        img {
+            margin-right: 2rem;
+
+        }
+    }
+    .footer__interaction {
+        flex: 1 1 25%;
+        @include flex(row, flex-end, center);
+    }
+}
