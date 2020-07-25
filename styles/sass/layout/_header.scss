@@ -1,0 +1,47 @@
+.main-head {
+    max-width: 1200px;
+    background: #000;
+    color: #e5e5e5;
+    margin: auto;
+    min-height: 6rem;
+
+    
+}
+.nav-bar {
+    border: 1px solid orange;
+    @include flex(row, space-between, center);
+
+    .nav-bar__title-en {
+        border: 1px solid rgb(102, 255, 0);
+        flex: 1 1 45%;
+        @include flex(row, flex-start, center);
+        
+        
+
+        .title-spark-en {
+            
+            @include flex(column, center, flex-end);
+
+            padding-right: 20px;
+            border-right: 2px solid #424242;
+
+            h1 {
+                font-weight: light;
+            }
+            span {
+                text-transform: uppercase;
+                color: #ff1d25;
+            }
+        }
+        .title-events-en {
+            
+            @include flex(column, center, flex-start);
+            padding-left: 20px;
+        }
+
+    }
+    .nav-bar__title-heb {
+        flex: 1 1 45%;
+        @include flex(row, flex-start, center);
+    }
+}
