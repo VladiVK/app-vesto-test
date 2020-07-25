@@ -1,11 +1,12 @@
 .main-footer {
-    .container {
-        background: #cccccc;
-        padding: 1rem 5.5rem;
-    }
+    max-width: 1200px;
+    margin: auto;
+    background: #cccccc;
+    padding: 20px 0 55px 0px;
 }
 .footer-wrapper {
     @include flex(row, center, center);
+    width: 100%;
 
     .footer__social {
         flex: 1 1 75%;
@@ -19,5 +20,9 @@
     .footer__interaction {
         flex: 1 1 25%;
         @include flex(row, flex-end, center);
+
+        img {
+            margin-left: 2rem;
+        }
     }
 }
